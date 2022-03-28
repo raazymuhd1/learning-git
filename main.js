@@ -11,12 +11,14 @@ class makeChild {
 
         newTag.appendChild(newText);
         container.appendChild(newTag)
+
+        return container;
     }
 
     replaceChild() {
-        // const firstChild = this.createNewTag();
+        const Parent = this.createNewTag();
 
-        console.log(this.createNewTag())
+        Parent.replaceChild(Parent.children[0], "h4")
     }
 }
 
