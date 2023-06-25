@@ -1,9 +1,95 @@
-body {
-   font-weight: bold; 
-   font-size: 20px;
-   width: 100vw;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    color: red;
+body {
+    /* scroll-snap-type: mandatory; */
+    background-image: radial-gradient(at left 50%, blueviolet, black);
+}
+
+body::-webkit-scrollbar {
+    background-image: radial-gradient(at 30% 30%, orange, black);
+    width: 15px;
+    border-radius: 10px;
+    height: 100px;
+    padding: 10px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: radial-gradient(circle 120px at 60% 40%, blueviolet, black), radial-gradient(circle 120px at 80% 40%, black, blueviolet) ;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+
+.list_item {
+    list-style: none;
+} 
+
+.conic_container {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.conic {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* border-image: linear-gradient(to bottom, red, orange) 1 100%; */
+    /* border-image-source: linear-gradient(to right, blueviolet, black); */
+    border-width: 10px;
+    /* border-image-slice: 1; */
+    border-style: solid;
+    margin-top: 10px;
+    /* box-shadow: 4px 4px 5px 8px orange, -4px -4px 5px 8px black; */
+    /* filter: saturate(10%) hue-rotate(80deg); */
+    margin-left: 20px;
+    /* animation: backface 2s ease-in-out alternate-reverse infinite ; */
+    /* background-clip: padding-box; */
+    backface-visibility: visible;
+    border-end-end-radius: 10px;
+    color: white;
+    border-left-color: orange;
+    border-right-color: red;
+    border-top-color: blueviolet;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    backdrop-filter: blur(2px) contrast(250%);
+    -webkit-backdrop-filter: blur(10px) contrast(250%);
+    text-emphasis: filled black;
+    text-rendering: optimizeSpeed;
+    m
+}
+
+.conic2 {
+    flex-shrink: 6;
+    transform: rotate(90deg);
+    transform-origin: 40% 140%;
+}
+
+@keyframes backface {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+    /* 75% { transform: translateX(-100px); }
+    100% { transform: translateX(0); } */
+}
+
+.lists li::marker {
+    color: orange;
+    font-size: 15px;
 }

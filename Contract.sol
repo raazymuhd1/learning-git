@@ -5,7 +5,7 @@ interface Template {
 }
 
 contract MyContract {
-    string public name = "mohammed raazy";
+    string public name = keccak256("mohammed");
     address payable public constant Owner = "0x99";
 
     constructor() {

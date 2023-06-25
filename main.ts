@@ -25,3 +25,16 @@ class makeChild {
 const getTag = new makeChild();
 // getTag.createNewTag()
 getTag.replaceChild()
+
+
+const callIt = (name) => {
+   console.log(name)
+}
+
+function sentName(callback) {
+    const name = "raazy";
+
+    callback(name)
+}
+
+sentName(callIt())
