@@ -1,40 +1,23 @@
-class makeChild {
-    constructor(tagName, text) {
-        this.tagName = tagName;
-        this.text = text;
+const root = document.getElementById("root");
+
+class List {
+
+    constructor(tag, content) {
+        this.tag = tag
+        this.content = content;
     }
 
-    createNewTag() {
-        const container = document.getElementsByClassName("container")[0];
-        const newTag = document.createElement("h2");
-        const newText = document.createTextNode("new Element");
+    createList() {
+        const listItem = ["Home", "About", "Contact"];
+        const ul = document.createElement("ul")
+        const li = document.createElement("li")
 
-        newTag.appendChild(newText);
-        container.appendChild(newTag)
+        for(const list of listItem ) {
+            li.textContent = list;
+        }
 
-        return container;
-    }
-
-    replaceChild() {
-        const Parent = this.createNewTag();
-
-        Parent.replaceChild(Parent.children[0], "h4")
+        return ul.append(li)
     }
 }
 
-const getTag = new makeChild();
-// getTag.createNewTag()
-getTag.replaceChild()
-
-
-const callIt = (name) => {
-   console.log(name)
-}
-
-function sentName(callback) {
-    const name = "raazy";
-
-    callback(name)
-}
-
-sentName(callIt())
+root.append(new List().createList())
