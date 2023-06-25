@@ -1,12 +1,12 @@
 pragma solidity ^0.8.0;
 
 interface Template {
-    function sendEther() external {};
+    function sendEther() external;
 }
 
 contract MyContract {
-    string public name = keccak256("mohammed");
-    address payable public constant Owner = "0x99";
+    // string public name = keccak256("mohammed");
+    address public immutable Owner;
 
     constructor() {
         Owner = msg.sender;
