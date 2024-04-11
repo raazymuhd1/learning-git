@@ -32,6 +32,9 @@
 ## Git Branch
 - `git branch` - for checking all available branches
 - `git checkout branchname` or `git switch branchname` to switch/move to another branches
+- shortcuts commands for switching branches, `
+  ` git switch -c branhname` (this will create a new branch and move to that branch) and `
+  `git checkout -b branchname` (also does the same)
   
 ## Git Head
   - git `HEAD` is points to where the `branch` is currently at on a `latest commit` ( ex: points on a latest commit on a navbar branch )
