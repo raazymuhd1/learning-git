@@ -13,7 +13,8 @@ class List {
         const li = document.createElement("li")
 
         for(const list of listItem ) {
-            li.textContent = list;
+            const liText = document.createTextNode(list || "no data")
+            li.append(liText)
         }
 
         return ul.append(li)
