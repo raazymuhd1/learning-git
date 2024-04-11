@@ -22,3 +22,13 @@ class List {
 }
 
 root.append(new List().createList())
+ 
+//  include a html code from another html file
+ const generateHtml = async() => {
+    const res = await fetch('./hero.html')
+    const data = await res.text();
+
+    document.querySelector(".hero").innerHTML = data;
+  }
+
+  generateHtml()
