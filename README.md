@@ -47,5 +47,10 @@
 
 ## Git Stash
   git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch that is not main/master branch. 
+  always be careful when working with stash command, make sure to check the stash list first.
+
+  u can bring the changes from another branch that has been stashed ( not add to stage and commit yet ) to another branches
   - `git stash` - to stash the changes
   - `git stash pop` - to bring back the changes that've been saved on shell after stashing (bcoz the changes is saves on the temporary place called shell )
+  - `git stash list` - to see stash list
+  
