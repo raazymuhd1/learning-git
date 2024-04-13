@@ -1,6 +1,6 @@
 <img src="https://miro.medium.com/max/1400/1*BCZkmZR1_YzDZy22Vn4uUw.png" width="500">
 
-<!-- video stop at 1.55.09 -->
+<!-- video stop at 2.15.03 -->
 
 ## Learning GIT ( Git Refresher )
   git is a version control that makes your life easier to work with any software developers around the world
@@ -69,5 +69,6 @@
   
  ## Moving to certain commit
  we can move to a certain commit using `git checkout`
- - `git checkout commitId`- moving to the commit on the specified commitId
+ - `git checkout commitId`- move THE HEAD to the commit on the specified commitId
  - `git checkout branchname` - moving back to the last commit 
+ - `git checkout HEAD~2` - move the HEAD to the prev 2 commit from the current commit
