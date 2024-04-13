@@ -1,6 +1,6 @@
 <img src="https://miro.medium.com/max/1400/1*BCZkmZR1_YzDZy22Vn4uUw.png" width="500">
 
-
+<!-- video stop at 1.55.09 -->
 
 ## Learning GIT ( Git Refresher )
   git is a version control that makes your life easier to work with any software developers around the world
@@ -35,6 +35,17 @@
 - shortcuts commands for switching branches, `
   ` git switch -c branhname` (this will create a new branch and move to that branch) and `
   `git checkout -b branchname` (also does the same)
+ - `git branch -d branchname` for deleting branch ( use this command with coutious)
   
 ## Git Head
   - git `HEAD` is points to where the `branch` is currently at on a `latest commit` ( ex: points on a latest commit on a navbar branch )
+
+## Git Diff 
+ - `git diff` is for reading the diffrences that has been made inside the same files
+ - `git diff --staged` - checking the diff on staging area
+ - `git diff branchname` - to check the diff on a branch
+
+## Git Stash
+  git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch. 
+  - `git stash` - to stash the changes
+  - `git stash pop` - to bring back the changes that've been saved on shell after stashing (bcoz the changes is saves on the temporary place called shell )
