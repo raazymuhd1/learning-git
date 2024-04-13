@@ -9,6 +9,17 @@
  - `git config --global user.name "john doe"` - a config for username on global
  - `git config --global user.email "johndoe@gmail.com"` - a config for user mail on global
  - checking ur configuration use this command `cat .gitconfig`
+  
+## Git Log
+ logging all the commit that has been made
+ - `git log filename`
+ - `git log --oneline` - will show all the logs in oneline
+ - `git log .` - will show all the logs
+
+## Git Restore
+ to restore/unstage the changes that have been staged
+ - `git restore --staged` - restore the changes from staging area
+ - `git restore filename` - restore the changes from the file
 
 ## Git Flow
  - `git init` - initialize a git on a folder
@@ -44,6 +55,7 @@
  - `git diff` is for reading the diffrences that has been made inside the same files
  - `git diff --staged` - checking the diff on staging area
  - `git diff branchname` - to check the diff on a branch
+ - `git diff filename` - to check the diff on the file
 
 ## Git Stash
   git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch that is not main/master branch. 
@@ -52,5 +64,10 @@
   u can bring the changes from another branch that has been stashed ( not add to stage and commit yet ) to another branches
   - `git stash` - to stash the changes
   - `git stash pop` - to bring back the changes that've been saved on shell after stashing (bcoz the changes is saves on the temporary place called shell )
-  - `git stash list` - to see stash list
+  - `git stash list` - to see stash list 
+  - `git stash apply stashNumber` - it will apply the changes and dump the stash
   
+ ## Moving to certain commit
+ we can move to a certain commit using `git checkout`
+ - `git checkout commitId`- moving to the commit on the specified commitId
+ - `git checkout branchname` - moving back to the last commit 
