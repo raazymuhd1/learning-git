@@ -46,6 +46,6 @@
  - `git diff branchname` - to check the diff on a branch
 
 ## Git Stash
-  git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch. 
+  git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch that is not main/master branch. 
   - `git stash` - to stash the changes
   - `git stash pop` - to bring back the changes that've been saved on shell after stashing (bcoz the changes is saves on the temporary place called shell )
