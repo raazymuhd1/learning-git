@@ -81,3 +81,8 @@
  - its not meant to be run on `main/master` branch
  - `git rebase branchname` will rewrite/remove the commit history from the branch that run the `rebase` command
  - never rebase when pushing to github
+
+
+## Working with remote repository
+- `git pull` - pull the latest info from the remote repo and add the code into our working code / local repo code
+- `git fetch` - fetch the latest info from the remote repo but not add the code into our working local repo.
