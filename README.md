@@ -79,5 +79,5 @@
  - alternative way to merge branch
  - clean up the commit ( history commits )
  - its not meant to be run on `main/master` branch
- - `git rebase` will rewrite/remove the commit history from the branch
-
+ - `git rebase branchname` will rewrite/remove the commit history from the branch that run the `rebase` command
+ - never rebase when pushing to github
