@@ -80,3 +80,4 @@
  - clean up the commit ( history commits )
  - its not meant to be run on `main/master` branch
  - `git rebase` will rewrite/remove the commit history from the branch
+
