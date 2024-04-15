@@ -79,3 +79,4 @@
  - alternative way to merge branch
  - clean up the commit ( history commits )
  - its not meant to be run on `main/master` branch
+ - `git rebase` will rewrite the commit history from the branch
