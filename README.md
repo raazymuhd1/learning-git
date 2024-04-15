@@ -60,7 +60,7 @@
  - `git diff filename` - to check the diff on the file
 
 ## Git Stash
-  git stash is use when u still working on some branch, and u didnt stage and commit it yet but u want to switch to another branch that is not main/master branch. 
+  git stash is use when u still working on some branch and not done yet, and u didnt stage and commit it yet but u want to switch to another branch that is not main/master branch. 
   always be careful when working with stash command, make sure to check the stash list first.
 
   u can bring the changes from another branch that has been stashed ( not add to stage and commit yet ) to another branches
