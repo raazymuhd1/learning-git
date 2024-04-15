@@ -27,6 +27,8 @@
  - `git commit` - commit a changes and add the file into a repo stage
 
 ## Commit
+ - committing a changes using `git commit -m "message here"`
+ - or adding and commiting at the same time using `git commit -am "message goes here"`
  - first `commit` does not dependes on any other `commit hash`
  - the next `commit` will be dependends on the first `commit hash`
 
@@ -72,3 +74,8 @@
  - `git checkout commitId`- move THE HEAD to the commit on the specified commitId
  - `git checkout branchname` - moving back to the last commit 
  - `git checkout HEAD~2` - move the HEAD to the prev 2 commit from the current commit
+
+## Git Rebase 
+ - alternative way to merge branch
+ - clean up the commit ( history commits )
+ - its not meant to be run on `main/master` branch
